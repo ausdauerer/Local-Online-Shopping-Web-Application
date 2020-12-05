@@ -13,7 +13,7 @@ class Row extends React.Component{
         return( <tr>{row}</tr> );
     }
 }
-export default class Table extends React.Component{
+export default class Change extends React.Component{
     constructor(props){
         super(props);
         this.state={ 
