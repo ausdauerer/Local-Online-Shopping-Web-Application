@@ -22,21 +22,23 @@ export default class Table extends React.Component{
             data:[]
          };
     } 
-    componentDidMount(){
-        fetch("http://localhost:3500/shops",{method:'GET'})
-        .then(res=>res.json())
-        .then(
-            (result)=>{  this.setState({isLoaded:true,data:result});  },
-            (error)=>{  this.setState({isLoaded:true,error});}
-        );
-    }
     render(){
+        if(this.props.make_request)
+        {
+            fetch(this.props.request_url,{method:'GET'})
+            .then(res=>res.json())
+            .then(
+                (result)=>{  this.setState({isLoaded:true,data:result});  },
+                (error)=>{  this.setState({isLoaded:true,error});}
+            );
+        }
         const {error,isLoaded,data}=this.state;
         if(error){  return(<div>Error</div>);   }
         else if(!isLoaded){ return(<div>Loading</div>); }
         else
         {
             const array=this.state.data;
+            
             const rows=array.map((obj,i) => <Row key={i} object={obj}/>);
             return(
                 <table>

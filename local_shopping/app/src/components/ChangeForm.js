@@ -1,3 +1,4 @@
+import './ChangeForm.css'
 const React=require('react');
 
 export default class ChangeForm extends React.Component{
@@ -59,18 +60,18 @@ export default class ChangeForm extends React.Component{
         console.log(this.state);
         const path=window.location.pathname;
         return(
+            <div id="formwrapper">
             <form onSubmit={this.handleSubmit}>
                 <label>
                     Item:
                     <input name="item" type="text" value={this.state.item} onChange={this.handleChange}/>
                 </label>
                 <br/>
-                <label>
-                    Availability: <div onChange={this.handleChange}>
+                <div onChange={this.handleChange}>
+                Availability: 
                     <input type="radio" value="true" name="avl"  /> Available
                     <input type="radio" value="false" name="avl" /> Not Available
                     </div>
-                </label>
                 <br/>
                 <label>
                     Quantity: 
@@ -89,6 +90,7 @@ export default class ChangeForm extends React.Component{
                 <br/>
                 <input type="button" value="Submit" onClick={this.handleSubmit}/>
             </form>
+            </div>
         );
     }
 }

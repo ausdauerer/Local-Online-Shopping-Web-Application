@@ -1,0 +1,28 @@
+
+*{
+    text-decoration: none;
+    font-family: 'Do Hyeon', sans-serif;
+}
+#nvbar{
+    background-color:rgb(39, 103, 221);
+    display:flex;
+    flex-flow:row;
+    text-decoration: none;
+    margin:none;
+    border-radius:10px;
+}
+button{
+    position: relative;
+    background-color:rgb(39, 103, 221);
+    border:none;
+    padding:10px;
+    border-radius:10px;
+    font-size:130%;
+}
+button:hover{
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    background-color: black;
+    color:white;
+    font-size:150%;
+}
