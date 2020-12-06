@@ -10,6 +10,7 @@ router.get('/shops/items',async (req,res)=>{
     });
 });
 router.get('/:shop/items',async (req,res)=>{
+    console.log(req);
     const items=await Item.find({ shop: req.params.shop },function(error,result){
         if(error) throw error;
         res.send(result);
