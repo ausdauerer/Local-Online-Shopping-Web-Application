@@ -1,0 +1,21 @@
+#nearbyshopswrapper{
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content:center;
+    align-items: center;
+    background-color:rgb(48,51,56);
+    position:relative;
+    width:70%;
+    left:15%;
+    transform:translate(+50%,0);
+    border-radius: 15px;
+}
+#messege{
+    color:white;
+    margin:15px;
+}
+#nearbyshopswrapper{
+    -webkit-animation: animation 2000ms linear both;
+    animation: animation 2000ms linear both;
+  }

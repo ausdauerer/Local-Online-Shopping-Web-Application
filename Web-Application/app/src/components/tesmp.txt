@@ -1,0 +1,16 @@
+<div id="formwrapper">
+            <form onSubmit={this.handleSubmit}>
+            <div class="form-row">
+              <label>Shop Name</label>
+              <div class="form-group col-md-6">
+                <input name="shop" type="text" class="form-control"  id="shopname" placeholder="Enter Shop Name" onChange={this.handleChange}/>
+                <input name="shop" type="text" class="form-control"  id="itemname" placeholder="Enter Shop Name" onChange={this.handleChange}/>
+                <small id="shopname" class="form-text text-muted">Name of your shop</small>
+              </div>
+              <div class="col">
+                <input name="shop" type="text" class="form-control"  id="itemname" placeholder="Enter Shop Name" onChange={this.handleChange}/>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>

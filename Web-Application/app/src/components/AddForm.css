@@ -1,0 +1,26 @@
+#formwrapper{
+    position:relative;
+    left:30%;
+    transform:translate(0,0);
+    width:40%;
+    background-color:rgb(48,51,56);
+    color:white;
+    padding:50px;
+    border-radius: 15px;
+}
+#formm{
+    display:flex;
+    flex-flow: column;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.fields{
+    color:black;
+    margin:10px;
+}
+#formwrapper{
+    -webkit-animation: animation 2000ms linear both;
+    animation: animation 2000ms linear both;
+  }
